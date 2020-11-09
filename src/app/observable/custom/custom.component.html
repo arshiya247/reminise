@@ -1,0 +1,32 @@
+<div class="container-my-5">
+    <h3>Custom Observable</h3>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>EX -01 MANUAL</strong>
+            <hr>
+            <ul id="createObsContainer" 
+            [ngClass]="techStatus == 'completed'? 'completed' : techStatus == 'error'? 'error' : ''" 
+            class="techList">
+            
+            </ul>
+        </div>
+        <div class="row"><div class="col-md-4">
+                <strong>EX -02 CUSTOM  INTERVAL OBSERVABLE</strong>
+                <hr>
+                <ul class="techList" id="cusIntObsContainer">
+                   
+                </ul>
+            </div></div>
+        <div class="row"><div class="col-md-4"><p class="container">
+            <strong>
+               Ex- 03 :  Random Names:
+            </strong>
+            'Anup','Shekhar','SHarma','Sudeep','Alia','Haseen','Aish'
+        </p>
+        <h2>Received Random Name is: {{names}}</h2>
+
+    
+    </div></div>
+    </div>
+</div>

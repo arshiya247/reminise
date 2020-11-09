@@ -1,0 +1,61 @@
+<div class="container-md-5">
+    <div class="row">
+        <div class="col-md-6">Filter Ex- 01
+            <strong> Filter : by length</strong>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>
+                <tr *ngFor="let item of data">
+                    <td>
+                        {{item.id}}
+                    </td>
+                    <td>
+                        {{item.name}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-6">Filter Ex- 02
+            <strong> Filter : by gender</strong>
+            <table>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                    </tr>
+                    <tr *ngFor='let item of dataGender'>
+                        <td>
+                            {{item.id}}
+                        </td>
+                        <td>
+                            {{item.name}}
+                        </td>
+                        <td>
+                            {{item.gender}}
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <div class="col-md-6">Filter Ex- 03
+            <strong> Filter : by nth item</strong>
+            <table>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                    </tr>
+                    <tr *ngFor='let item of dataNthItem'>
+                        <td>
+                            {{item.id}}
+                        </td>
+                        <td>
+                            {{item.name}}
+                        </td>
+                        <td>{{item.gender}}</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</div>
