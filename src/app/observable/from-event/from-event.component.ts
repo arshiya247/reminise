@@ -11,6 +11,7 @@ export class FromEventComponent implements OnInit {
   constructor() { }
 
   @ViewChild('addBtn') addBtn:any;
+ 
 
   ngOnInit(): void {
 

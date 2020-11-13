@@ -17,8 +17,9 @@ import { PluckdemoComponent } from './observable/pluckdemo/pluckdemo.component';
 import { FilterdemoComponent } from './observable/filterdemo/filterdemo.component';
 import { TapdemoComponent } from './observable/tapdemo/tapdemo.component';
 import { TakeDemoComponent } from './observable/take-demo/take-demo.component';
-import { RetryDemoComponent } from './observable/retry-demo/retry-demo.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RetryDemoComponent } from './observable/retry-demo/retry-demo.component';
+import { DebounceComponent } from './observable/debounce/debounce.component';
 //import { PluckSComponent } from './observable/pluck/pluck.component';
 
 @NgModule({
@@ -39,6 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     TapdemoComponent,
     TakeDemoComponent,
     RetryDemoComponent,
+    DebounceComponent
     //PluckSComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],

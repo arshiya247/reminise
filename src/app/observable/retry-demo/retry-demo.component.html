@@ -1,8 +1,10 @@
 <div class="container">
+
+
   <div class="row">
     <div class="col-mt-4">
       retry, retrywhen, scan and delay
-      <table style="padding: 20px 20px 20px">
+      <table style="padding: 20px 20px 20px" *ngIf='sampleD !=null'>
         <tr>
           <th>Email</th>
           <td>{{ sampleD.email }}</td>
@@ -29,6 +31,7 @@
         </tr>
       </table>
     </div>
-    <button class="btn btn-primary" (click)="fetchUser()">Fetch Details</button>
+    <button class="btn btn-primary" (click)= "fetchUser()">Fetch Details</button>
+    
   </div>
 </div>

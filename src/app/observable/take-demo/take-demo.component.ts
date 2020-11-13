@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { count } from 'console';
 import { from, fromEvent, interval, Subscription, timer } from 'rxjs';
 import { map, take, takeLast, takeUntil } from 'rxjs/operators';
 import { ApiService } from 'src/app/includes/apiService';

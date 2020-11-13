@@ -1,0 +1,42 @@
+<div class="container">
+    <p><strong> Debounce, Debounce When Examples</strong>
+
+    </p>
+
+    <br>
+    <div class="row">
+
+        <div class="col-mt-5">
+            <strong>Ex - 01 <span class="text-primary"> Debounce Time</span></strong>
+            <hr>
+            <label 
+             class="col-sm-2 col-form-label col-form-label-lg">Search...</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-lg" 
+                    placeholder="Search..." #myExampleRef>
+                    <br>
+                    <span *ngIf=' Data != null '>
+                        <strong class="text-success">Requested Data: </strong>
+                        <strong>{{Data}}</strong>
+                    </span>
+            </div>
+
+        </div>
+        <div class="col-mt-5">
+            <strong>Ex - 02 <span class="text-warning"> Distict Until Time</span></strong>
+            <hr>
+            <label 
+             class="col-sm-2 col-form-label col-form-label-lg">Search...</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-lg" 
+                    placeholder="Search..." #myExampleRef2>
+                    <br>
+                    <span *ngIf=' Data2 != null '>
+                        <strong class="text-success">Requested Data: </strong>
+                        <strong>{{Data2}}</strong>
+                    </span>
+            </div>
+        </div>
+    </div>
+
+</div>
