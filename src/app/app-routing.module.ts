@@ -16,6 +16,7 @@ import { TapdemoComponent } from './observable/tapdemo/tapdemo.component';
 import { TakeDemoComponent } from './observable/take-demo/take-demo.component';
 import { RetryDemoComponent } from './observable/retry-demo/retry-demo.component';
 import { DebounceComponent } from './observable/debounce/debounce.component';
+import { SubjectComponent } from './observable/subject/subject.component';
 //import { PluckSComponent } from './observable/pluck/pluck.component';
 
 const routes: Routes = [
@@ -36,7 +37,8 @@ const routes: Routes = [
       { path: 'tap', component: TapdemoComponent },
       { path: 'take', component: TakeDemoComponent },
       { path: 'retry', component: RetryDemoComponent },
-      { path: 'debounce' , component: DebounceComponent}
+      { path: 'debounce', component: DebounceComponent },
+      { path: 'subject', component: SubjectComponent },
     ],
   },
 ];
