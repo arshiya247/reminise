@@ -20,10 +20,10 @@ import { TakeDemoComponent } from './observable/take-demo/take-demo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RetryDemoComponent } from './observable/retry-demo/retry-demo.component';
 import { DebounceComponent } from './observable/debounce/debounce.component';
-import { SubjectComponent } from './observable/subject/subject.component';
 import { Comp1Component } from './comps/comp1/comp1.component';
 import { Comp2Component } from './comps/comp2/comp2.component';
 import { Comp3Component } from './comps/comp3/comp3.component';
+import { SubjectDemoComponent } from './observable/subject-demo/subject-demo.component';
 
 @NgModule({
   declarations: [
@@ -44,10 +44,10 @@ import { Comp3Component } from './comps/comp3/comp3.component';
     TakeDemoComponent,
     RetryDemoComponent,
     DebounceComponent,
-    SubjectComponent,
     Comp1Component,
     Comp2Component,
-    Comp3Component
+    Comp3Component,
+    SubjectDemoComponent
     //PluckSComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
