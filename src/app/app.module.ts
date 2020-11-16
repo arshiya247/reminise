@@ -21,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RetryDemoComponent } from './observable/retry-demo/retry-demo.component';
 import { DebounceComponent } from './observable/debounce/debounce.component';
 import { SubjectComponent } from './observable/subject/subject.component';
-//import { PluckSComponent } from './observable/pluck/pluck.component';
+import { Comp1Component } from './comps/comp1/comp1.component';
+import { Comp2Component } from './comps/comp2/comp2.component';
+import { Comp3Component } from './comps/comp3/comp3.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,10 @@ import { SubjectComponent } from './observable/subject/subject.component';
     TakeDemoComponent,
     RetryDemoComponent,
     DebounceComponent,
-    SubjectComponent
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component
     //PluckSComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
