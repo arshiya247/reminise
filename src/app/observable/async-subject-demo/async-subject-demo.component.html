@@ -1,0 +1,36 @@
+<div class="row"></div>
+<hr />
+<br />
+<div class="row">
+  <h3>Add Video</h3>
+  <hr />
+  <div class="col">
+    <input type="text" class="form-control" #data />
+    <hr />
+    <button class="btn btn-success" (click)="capturedata(data.value)">
+      Add Video
+    </button>
+  </div>
+</div>
+
+<br />
+
+<div class="row">
+  <div class="col-md-4">
+    <p><strong>User - 01</strong></p>
+
+    <ul>
+      <li><strong>Video:</strong>{{ Value }}</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <p><strong>User - 02</strong></p>
+    <!-- 
+    <ul *ngIf="subscribeMode2">
+      <li *ngFor="let item of user2"><strong>Video:</strong> {{ item }}</li>
+    </ul> -->
+    <button class="btn btn-success" (click)="handleSubscription()">
+      Complete Subscription
+    </button>
+  </div>
+</div>

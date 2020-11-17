@@ -1,11 +1,16 @@
 import { Component, Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { AsyncSubject, Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+import { ReplaySubject } from 'rxjs/internal/ReplaySubject';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiService {
   exclusiveSub = new Subject<boolean>();
+  usernameSub = new BehaviorSubject<String>('Arsh');
+  videoReplaySub = new ReplaySubject<string>(3, 5000);
+  ayncSub = new AsyncSubject();
   constructor() {}
 
   print(val, containerId) {

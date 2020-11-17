@@ -16,6 +16,11 @@ import { TakeDemoComponent } from './observable/take-demo/take-demo.component';
 import { RetryDemoComponent } from './observable/retry-demo/retry-demo.component';
 import { DebounceComponent } from './observable/debounce/debounce.component';
 import { SubjectDemoComponent } from './observable/subject-demo/subject-demo.component';
+import { ReplaySubjectDemoComponent } from './observable/replay-subject-demo/replay-subject-demo.component';
+import { AsyncSubjectDemoComponent } from './observable/async-subject-demo/async-subject-demo.component';
+import { ConcatDemoComponent } from './observable/concat-demo/concat-demo.component';
+import { MergeDemoComponent } from './observable/merge-demo/merge-demo.component';
+import { ConcatMapDemoComponent } from './observable/concat-map-demo/concat-map-demo.component';
 //import { PluckSComponent } from './observable/pluck/pluck.component';
 
 const routes: Routes = [
@@ -38,6 +43,11 @@ const routes: Routes = [
       { path: 'retry', component: RetryDemoComponent },
       { path: 'debounce', component: DebounceComponent },
       { path: 'subject', component: SubjectDemoComponent },
+      { path: 'replaySubject', component: ReplaySubjectDemoComponent },
+      { path: 'async', component: AsyncSubjectDemoComponent },
+      { path: 'concat', component: ConcatDemoComponent },
+      { path: 'merge', component: MergeDemoComponent },
+      { path: 'concatMap', component: ConcatMapDemoComponent },
     ],
   },
 ];

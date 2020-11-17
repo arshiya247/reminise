@@ -8,7 +8,12 @@ import { ApiService } from 'src/app/includes/apiService';
   styleUrls: ['./subject-demo.component.scss'],
 })
 export class SubjectDemoComponent implements OnInit, OnDestroy {
-  constructor(private service: ApiService) {}
+  username: String;
+  constructor(private service: ApiService) {
+    this.service.usernameSub.subscribe((res) => {
+      this.username = res;
+    });
+  }
 
   ngOnInit(): void {
     this.service.exclusiveSub.next(true);

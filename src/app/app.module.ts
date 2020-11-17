@@ -24,6 +24,11 @@ import { Comp1Component } from './comps/comp1/comp1.component';
 import { Comp2Component } from './comps/comp2/comp2.component';
 import { Comp3Component } from './comps/comp3/comp3.component';
 import { SubjectDemoComponent } from './observable/subject-demo/subject-demo.component';
+import { ReplaySubjectDemoComponent } from './observable/replay-subject-demo/replay-subject-demo.component';
+import { AsyncSubjectDemoComponent } from './observable/async-subject-demo/async-subject-demo.component';
+import { ConcatDemoComponent } from './observable/concat-demo/concat-demo.component';
+import { MergeDemoComponent } from './observable/merge-demo/merge-demo.component';
+import { ConcatMapDemoComponent } from './observable/concat-map-demo/concat-map-demo.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +52,12 @@ import { SubjectDemoComponent } from './observable/subject-demo/subject-demo.com
     Comp1Component,
     Comp2Component,
     Comp3Component,
-    SubjectDemoComponent
+    SubjectDemoComponent,
+    ReplaySubjectDemoComponent,
+    AsyncSubjectDemoComponent,
+    ConcatDemoComponent,
+    MergeDemoComponent,
+    ConcatMapDemoComponent,
     //PluckSComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],

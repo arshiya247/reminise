@@ -1,10 +1,12 @@
 <div class="card">
-    <div class="card-header">
-      Featured
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Username is <span class="text-primary">Arsh</span></h5>
-     <input type='text' class="form-control mb-2">
-      <button href="#" class="btn btn-primary">Change</button>
-    </div>
+  <div class="card-header">Featured</div>
+  <div class="card-body">
+    <h5 class="card-title">
+      Username is <span class="text-primary">{{ Arsh }}</span>
+    </h5>
+    <input type="text" class="form-control mb-2" #user />
+    <button href="#" class="btn btn-primary" (click)="handleArsh(user)">
+      Change
+    </button>
   </div>
+</div>
