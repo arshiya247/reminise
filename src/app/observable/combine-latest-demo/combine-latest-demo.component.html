@@ -1,0 +1,58 @@
+<div class="my-3">
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Names</strong>
+      <hr />
+      <select class="form-control" #name>
+        <option *ngFor="let item of names" value="{{ item }}">
+          {{ item }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <strong>Colors</strong>
+      <hr />
+      <select class="form-control" #color>
+        <option *ngFor="let item of colors" value="{{ item }}">
+          {{ item }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-9 ml-auto">
+      <strong>Combine Latest</strong>
+      <hr />
+      <ul class="wrapper" #combineLatest></ul>
+    </div>
+  </div>
+  <div class="row">
+    <strong> Zip And Fork Join</strong>
+    <div class="col-md-3">
+      <strong>Names</strong>
+      <hr />
+      <select class="form-control" #nameZip>
+        <option *ngFor="let item of names" value="{{ item }}">
+          {{ item }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <strong>Colors</strong>
+      <hr />
+      <select class="form-control" #colorZip>
+        <option *ngFor="let item of colors" value="{{ item }}">
+          {{ item }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-9 ml-auto">
+      <strong>Zip Demo</strong>
+      <hr />
+      <ul class="wrapper" #zipElement></ul>
+    </div>
+    <div class="col-md-9 ml-auto">
+      <strong>Fork Join Demo</strong>
+      <hr />
+      <ul class="wrapper" #forkElement></ul>
+    </div>
+  </div>
+</div>

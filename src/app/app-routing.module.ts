@@ -21,6 +21,11 @@ import { AsyncSubjectDemoComponent } from './observable/async-subject-demo/async
 import { ConcatDemoComponent } from './observable/concat-demo/concat-demo.component';
 import { MergeDemoComponent } from './observable/merge-demo/merge-demo.component';
 import { ConcatMapDemoComponent } from './observable/concat-map-demo/concat-map-demo.component';
+import { SwitchMapDemoComponent } from './observable/switch-map-demo/switch-map-demo.component';
+import { SearchMiniProjComponent } from './observable/search-mini-proj/search-mini-proj.component';
+import { ExhaustMapDemoComponent } from './observable/exhaust-map-demo/exhaust-map-demo.component';
+import { ShareReplayDemoComponent } from './observable/share-replay-demo/share-replay-demo.component';
+import { CombineLatestDemoComponent } from './observable/combine-latest-demo/combine-latest-demo.component';
 //import { PluckSComponent } from './observable/pluck/pluck.component';
 
 const routes: Routes = [
@@ -48,6 +53,11 @@ const routes: Routes = [
       { path: 'concat', component: ConcatDemoComponent },
       { path: 'merge', component: MergeDemoComponent },
       { path: 'concatMap', component: ConcatMapDemoComponent },
+      { path: 'switchMap', component: SwitchMapDemoComponent },
+      { path: 'searchMini', component: SearchMiniProjComponent },
+      { path: 'exhaustMap', component: ExhaustMapDemoComponent },
+      { path: 'shareReplay', component: ShareReplayDemoComponent },
+      { path: 'combineLatest', component: CombineLatestDemoComponent },
     ],
   },
 ];

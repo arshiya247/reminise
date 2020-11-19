@@ -29,6 +29,12 @@ import { AsyncSubjectDemoComponent } from './observable/async-subject-demo/async
 import { ConcatDemoComponent } from './observable/concat-demo/concat-demo.component';
 import { MergeDemoComponent } from './observable/merge-demo/merge-demo.component';
 import { ConcatMapDemoComponent } from './observable/concat-map-demo/concat-map-demo.component';
+import { SwitchMapDemoComponent } from './observable/switch-map-demo/switch-map-demo.component';
+import { SearchMiniProjComponent } from './observable/search-mini-proj/search-mini-proj.component';
+import { FormsModule } from '@angular/forms';
+import { ExhaustMapDemoComponent } from './observable/exhaust-map-demo/exhaust-map-demo.component';
+import { ShareReplayDemoComponent } from './observable/share-replay-demo/share-replay-demo.component';
+import { CombineLatestDemoComponent } from './observable/combine-latest-demo/combine-latest-demo.component';
 
 @NgModule({
   declarations: [
@@ -58,9 +64,14 @@ import { ConcatMapDemoComponent } from './observable/concat-map-demo/concat-map-
     ConcatDemoComponent,
     MergeDemoComponent,
     ConcatMapDemoComponent,
+    SwitchMapDemoComponent,
+    SearchMiniProjComponent,
+    ExhaustMapDemoComponent,
+    ShareReplayDemoComponent,
+    CombineLatestDemoComponent,
     //PluckSComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

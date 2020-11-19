@@ -2,6 +2,7 @@ import { Component, Injectable } from '@angular/core';
 import { AsyncSubject, Subject } from 'rxjs';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { ReplaySubject } from 'rxjs/internal/ReplaySubject';
+import { ErrorService } from './error.service';
 
 @Injectable({
   providedIn: 'root',
